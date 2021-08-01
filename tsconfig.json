@@ -22,8 +22,8 @@
         "paths": {
             "@components": ["components"],
             "@components/*": ["components/*"],
-            "@routes": ["routes"],
-            "@routes/*": ["routes/*"],
+            "@utils": ["utils"],
+            "@utils/*": ["utils/*"],
             "@theme": ["theme"],
             "@theme/*": ["theme/*"]
         }

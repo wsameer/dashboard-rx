@@ -1,19 +1,28 @@
-export type ThemeType = typeof light;
+type ButtonTheme = {
+    primary: string;
+    secondary: string;
+};
 
-export const light = {
+export type AppTheme = {
+    background: string;
+    text: string;
+    button: ButtonTheme;
+};
+
+export const light: AppTheme = {
     background: '#f6f7fa',
     text: '#424661',
     button: {
-        primary: '#c04808',
+        primary: '#f28b54',
         secondary: '#3a3a47'
     }
 };
 
-export const dark: ThemeType = {
+export const dark: AppTheme = {
     background: '#3a3a47',
     text: '#f6f7fa',
     button: {
-        primary: '#c04808',
+        primary: '#f28b54',
         secondary: '#f6f7fa'
     }
 };

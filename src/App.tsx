@@ -1,11 +1,14 @@
+import theme from '@theme';
 import React from 'react';
-import * as Styled from './App.styled';
+import { ThemeProvider } from 'styled-components';
 
 const App: React.FC = () => {
     return (
-        <Styled.AppContainer>
-            <h1>Hello Snowpack World!</h1>
-        </Styled.AppContainer>
+        <>
+            <ThemeProvider theme={theme}>
+                <h1>Hello Snowpack!</h1>
+            </ThemeProvider>
+        </>
     );
 };
 
