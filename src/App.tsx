@@ -1,12 +1,16 @@
+import { PageLayout } from '@components/layout';
 import theme from '@theme';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const App: React.FC = () => {
     return (
         <>
             <ThemeProvider theme={theme}>
-                <h1>Hello Snowpack!</h1>
+                <Router>
+                    <PageLayout></PageLayout>
+                </Router>
             </ThemeProvider>
         </>
     );
