@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "jsx": "react",
+        "lib": ["dom", "ES5", "ES2015", "ES2017", "ES2018", "ES2020", "ESNext"],
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "strictFunctionTypes": false,
+        "strictNullChecks": false,
+        "target": "esnext",
+        "types": ["jest", "node", "snowpack-env"],
+        "allowSyntheticDefaultImports": true,
+        "importsNotUsedAsValues": "error",
+        "baseUrl": "src",
+        "paths": {
+            "@components": ["components"],
+            "@components/*": ["components/*"],
+            "@routes": ["routes"],
+            "@routes/*": ["routes/*"],
+            "@theme": ["theme"],
+            "@theme/*": ["theme/*"]
+        }
+    },
+    "include": ["src", "types"],
+    "exclude": ["node_modules", "dist"]
+}
