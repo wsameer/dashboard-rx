@@ -9,7 +9,9 @@ export default {
         '@public': './public',
         '@components': './src/components',
         '@theme': './src/theme',
-        '@utils': './src/utils'
+        '@utils': './src/utils',
+        '@pages': './src/pages',
+        '@routes': './src/routes'
     },
     plugins: [
         '@snowpack/plugin-react-refresh',
@@ -24,7 +26,7 @@ export default {
     ],
     routes: [
         /* Enable an SPA Fallback in development: */
-        // {"match": "routes", "src": ".*", "dest": "/index.html"},
+        { match: 'routes', src: '.*', dest: '/index.html' }
     ],
     optimize: {
         /* Example: Bundle your final build: */
