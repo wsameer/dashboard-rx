@@ -5,7 +5,7 @@ export const PageLayoutContainer = styled('div')`
     height: 100%;
     width: 100%;
     grid-template-areas:
-        'aside header'
+        'header header'
         'aside  main';
     grid-template-rows: max-content auto;
     grid-template-columns: auto 1fr;
