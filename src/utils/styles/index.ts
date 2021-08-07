@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         background-color: ${({ theme }) => theme.background};
         color: ${({ theme }) => theme.text};
+        font-family: 'Open Sans', sans-serif;
     }
     main {
         display: block;
