@@ -39,7 +39,7 @@ export const NavListItem = styled('li')`
 
 export const NavListItemIcon = styled('div')`
     display: inline-flex;
-    min-width: 36px;
+    min-width: 26px;
 `;
 
 export const NavListItemText = styled('div')`

@@ -8,7 +8,7 @@ export const SideNav: React.FC = () => {
             <Styled.SideNavList>
                 <Styled.NavListItem>
                     <Styled.NavListItemIcon>
-                        <Home size="20" />
+                        <Home size="18" />
                     </Styled.NavListItemIcon>
                     <Styled.NavListItemText>
                         <span>Home</span>
@@ -16,7 +16,7 @@ export const SideNav: React.FC = () => {
                 </Styled.NavListItem>
                 <Styled.NavListItem>
                     <Styled.NavListItemIcon>
-                        <Trash2 size="20" />
+                        <Trash2 size="18" />
                     </Styled.NavListItemIcon>
                     <Styled.NavListItemText>
                         <span>Trash</span>
