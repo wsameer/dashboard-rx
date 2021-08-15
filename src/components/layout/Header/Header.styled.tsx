@@ -1,3 +1,4 @@
+import theme from '@theme';
 import styled from 'styled-components';
 
 export const HeaderContainer = styled(`header`)`
@@ -5,10 +6,10 @@ export const HeaderContainer = styled(`header`)`
     flex-direction: row;
     justify-content: space-between;
     left: auto;
-    background-color: #acb1f2;
+    background-color: #e44332;
     min-height: 48px;
     align-items: center;
-    padding: 0 1.2rem;
+    padding: 0 2rem;
 `;
 
 export const FixedDiv = styled('div')`
@@ -35,4 +36,5 @@ export const ActionButtons = styled('ul')`
 
 export const HeaderItem = styled('li')`
     padding: 0 1em;
+    color: ${theme.headerText}
 `;

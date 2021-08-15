@@ -7,11 +7,13 @@ export const Header: React.FC = React.memo(() => {
     return (
         <Styled.HeaderContainer>
             <Styled.LeftSide>
-                <img src="brand.png" alt="brand logo" height="36" />
+                <img src="brand.png" alt="brand logo" height="32s" />
             </Styled.LeftSide>
             <Styled.RightSide>
                 <Styled.ActionButtons>
-                    <Styled.HeaderItem>{darkTheme ? <Moon size="20" /> : <Sun size="20" />}</Styled.HeaderItem>
+                    <Styled.HeaderItem>
+                        {darkTheme ? <Moon size="20" /> : <Sun size="20" />}
+                    </Styled.HeaderItem>
                     <Styled.HeaderItem>
                         <Bell size="20" />
                     </Styled.HeaderItem>
