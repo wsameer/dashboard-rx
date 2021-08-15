@@ -1,12 +1,12 @@
 import Main from '@components/layout/Main';
 import React from 'react';
 
-export const Dashboard: React.FC = () => {
+export const Notes: React.FC = () => {
     return (
         <Main>
-            <h1>Hello</h1>
+            <h1>All Notes</h1>
         </Main>
     );
 };
 
-Dashboard.displayName = 'Dashboard';
+Notes.displayName = 'Notes';

@@ -21,5 +21,6 @@ export const PageLayoutContainer = styled('div')`
     & > main {
         grid-area: main;
         transition: width 200ms;
+        padding: 1rem;
     }
 `;

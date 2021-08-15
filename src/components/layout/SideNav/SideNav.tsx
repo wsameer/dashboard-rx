@@ -13,7 +13,7 @@ export const SideNav: React.FC = () => {
                             <Home size="18" />
                         </Styled.NavListItemIcon>
                         <Styled.NavListItemText>
-                            <span>Dashboard</span>
+                            <span>All Notes</span>
                         </Styled.NavListItemText>
                     </Styled.NavLink>
                 </Styled.NavListItem>
@@ -27,7 +27,6 @@ export const SideNav: React.FC = () => {
                         </Styled.NavListItemText>
                     </Styled.NavLink>
                 </Styled.NavListItem>
-                <hr />
             </Styled.SideNavList>
         </Styled.SideNavContainer>
     );
