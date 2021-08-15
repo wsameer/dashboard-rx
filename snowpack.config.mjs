@@ -11,7 +11,8 @@ export default {
         '@theme': './src/theme',
         '@utils': './src/utils',
         '@pages': './src/pages',
-        '@routes': './src/routes'
+        '@routes': './src/routes',
+        '@testData': './testData'
     },
     plugins: [
         '@snowpack/plugin-react-refresh',

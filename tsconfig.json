@@ -29,7 +29,9 @@
             "@routes": ["routes"],
             "@routes/*": ["routes/*"],
             "@pages": ["pages"],
-            "@pages/*": ["pages/*"]
+            "@pages/*": ["pages/*"],
+            "@testData": ["../testData"],
+            "@testData/*": ["../testData/*"]
         }
     },
     "include": ["src", "types"],
