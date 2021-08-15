@@ -8,6 +8,11 @@ export type AppTheme = {
     text: string;
     headerText: string;
     button: ButtonTheme;
+    sidenav: {
+        text: string;
+        activeText: string;
+        activeBackground: string;
+    };
 };
 
 export const light: AppTheme = {
@@ -17,6 +22,11 @@ export const light: AppTheme = {
     button: {
         primary: '#f28b54',
         secondary: '#3a3a47'
+    },
+    sidenav: {
+        text: '#424661',
+        activeText: '#fff',
+        activeBackground: '#e44332'
     }
 };
 
@@ -27,6 +37,11 @@ export const dark: AppTheme = {
     button: {
         primary: '#f28b54',
         secondary: '#f6f7fa'
+    },
+    sidenav: {
+        text: '#424661',
+        activeText: '#fff',
+        activeBackground: '#e44332'
     }
 };
 
