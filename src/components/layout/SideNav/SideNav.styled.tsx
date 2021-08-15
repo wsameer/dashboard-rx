@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import theme from '@theme';
+import { NavLink as RouterNavLink } from 'react-router-dom';
 
 export const SideNavContainer = styled('aside')`
     display: flex;
@@ -8,14 +10,6 @@ export const SideNavContainer = styled('aside')`
     width: 220px;
     padding: 0 1rem;
 `;
-
-// export const FixedItems = styled('div')`
-//     margin-bottom: 1.6rem;
-// `;
-
-// export const CustomItems = styled('div')`
-//     border-top: 1px solid black;
-// `;
 
 export const SideNavList = styled('ul')`
     padding: 0;
@@ -27,13 +21,9 @@ export const NavListItem = styled('li')`
     margin-bottom: 5px;
     display: flex;
     flex-grow: 1;
-    text-align: left;
-    border-radius: 12px;
-    padding: 12px 16px;
 
     &:hover {
-        color: rgb(94, 53, 177);
-        background-color: rgb(237, 231, 246);
+        color: ${theme.sidenav.activeText};
     }
 `;
 
@@ -50,4 +40,20 @@ export const NavListItemText = styled('div')`
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.334em;
+`;
+
+export const NavLink = styled(RouterNavLink)`
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: ${theme.sidenav.text};
+
+    &.${props => props.activeClassName} {
+        color: ${theme.sidenav.activeText};
+        background-color: ${theme.sidenav.activeBackground};
+    }
 `;
